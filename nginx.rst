@@ -10,7 +10,7 @@ Addition to the ETag file validation header. Cache-Control response header is ne
 With ``Nginx``, we can use the header module, which is a core Nginx module, to configure these headers. This module is added to the default
 server block configuration file.
 
-  sudo vi /etc/nginx/nginx.conf
+  ``sudo vi /etc/nginx/nginx.conf``
   
 Find the ``server`` configuration block and add a ``map`` block before:
 
