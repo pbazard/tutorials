@@ -22,6 +22,29 @@ Serving Static Content
 ======================
 
 
+Setting Up a Simple Proxy Server
+================================
+First define the proxied server by adding one more server block:
+
+ .. code-block:: ini
+  
+      server {
+        listen 8080;
+        root /data/up1;
+        
+        location / {
+        }
+      }
+
+Next, we use the...
+
+ .. code-block:: ini
+  
+  location ~ \.(gif|jpg|png)$ {
+    root /data/images;
+  }
+
+The parameter ``~ \.(gif|jpg|png)$`` is a regular expression matching all URI ending with ``.gif``, ``.jpg``, ``.png``. A regular expression should be preceded by ``~``.
 
 Cache Management
 ================
