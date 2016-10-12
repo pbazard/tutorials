@@ -1,5 +1,13 @@
+Nginx
+=====
+
+Which version: 
 
   sudo nginx -v
+
+Check if your syntax is error free:
+
+  sudo nginx -t
 
 Nginx Configuration File's Structure
 ====================================
@@ -100,5 +108,15 @@ Modify the listening port to 443, which is used by the HTTPS protocol:
     listen 443 ssl http2 default_server;
     listen [::]:443 ssl http2 default_server;
     
+Redirecting all HTTP requests to HTTPS
+--------------------------------------
+
+    .. code-block:: ini
     
+      server {
+       listen         80;
+       listen    [::]:80;
+       server_name    example.com;
+       return         301 https://$server_name$request_uri;
+      }
 
