@@ -22,7 +22,7 @@ A ``map`` block defines the mapping between a file type and how long it will be 
       text/html              epoch; # no caching ask for the page on every request
       text/css               max;   # cache the files as long as possible
       application/javascript max;
-      ~image/                max;   # regular expression to map all the file types containing ``image`` in their MIME type 
+      ~image/                max;   # regexp to map all the file types containing image/ in their MIME type 
     }
     
     server {
@@ -32,3 +32,11 @@ A ``map`` block defines the mapping between a file type and how long it will be 
       expires $expires;
       ...
     }
+
+Testing Browser Caching
+-----------------------
+Execute the following request:
+
+  curl -I http://localhost/test.html
+  
+and check that ``Expires`` and ``Cache-Control`` are present.
