@@ -15,7 +15,7 @@ Nginx consists of modules which are controlled by directives. Directives comes i
 
   .. code-block:: ini
   
-  http {
+    http {
         server {
           location / {
             root /data/www;
@@ -25,7 +25,7 @@ Nginx consists of modules which are controlled by directives. Directives comes i
             root /data;
           }
         }
-  }
+    }
 
 How Nginx processes a request
 ============================
