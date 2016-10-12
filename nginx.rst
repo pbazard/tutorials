@@ -44,7 +44,7 @@ Next, we use the...
     root /data/images;
   }
 
-The parameter ``~ \.(gif|jpg|png)$`` is a regular expression matching all URI ending with ``.gif``, ``.jpg``, ``.png``. A regular expression should be preceded by ``~``.
+The parameter ``~ \.(gif|jpg|png)$`` is a regular expression matching all URI ending with ``.gif``, ``.jpg``, ``.png``. A **regular expression** should be preceded by ``~``.
 
 Cache Management
 ================
