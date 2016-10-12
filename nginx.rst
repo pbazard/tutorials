@@ -27,9 +27,13 @@ Nginx consists of modules which are controlled by directives. Directives comes i
         }
       }
 
-How Ngix processes a request
+How Nginx processes a request
 ============================
 First, Nginx decides which ``server`` should process the request. The test is based on the content of the header field ``Host``. If the value does not match any server name, the request will be routed to the default server; the first one in our case but it can be set explicitly by defining the ``default_server`` parameter in the ``listen`` directive.
+
+Server names
+============
+
 
 Serving Static Content
 ======================
