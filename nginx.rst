@@ -86,3 +86,9 @@ Execute the following request:
   curl -I http://localhost/test.html
   
 and check that ``Expires`` and ``Cache-Control`` are present.
+
+HTTP/2 support
+==============
+Reference `Digital Ocean <https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-with-http-2-support-on-ubuntu-16-04>`_. The main advantage of HTTP/2 is its high transfer speed for **content-rich** websites.
+
+
