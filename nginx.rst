@@ -1,4 +1,6 @@
 
+  sudo nginx -v
+
 Nginx Configuration File's Structure
 ====================================
 Nginx consists of modules which are controlled by directives. Directives comes in two flavours: simple directives and block directives.
@@ -91,4 +93,12 @@ HTTP/2 support
 ==============
 Reference `Digital Ocean <https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-with-http-2-support-on-ubuntu-16-04>`_. The main advantage of HTTP/2 is its high transfer speed for **content-rich** websites.
 
+Modify the listening port to 443, which is used by the HTTPS protocol:
+
+  .. code-block:: ini
+    
+    listen 443 ssl http2 default_server;
+    listen [::]:443 ssl http2 default_server;
+    
+    
 
