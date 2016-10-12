@@ -110,6 +110,7 @@ Modify the listening port to 443, which is used by the HTTPS protocol:
     
 Redirecting all HTTP requests to HTTPS
 --------------------------------------
+At the bottom of your file, create a new ``server`` block for redirecting all HTTP requests to HTTPS:
 
     .. code-block:: ini
     
@@ -120,3 +121,6 @@ Redirecting all HTTP requests to HTTPS
        return         301 https://$server_name$request_uri;
       }
 
+Veryfing the changes
+--------------------
+Check that everything works properly in Chrome.
