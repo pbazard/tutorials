@@ -12,17 +12,17 @@ server block configuration file.
 
   ``sudo vi /etc/nginx/nginx.conf``
   
-Find the ``server`` configuration block and add a ``map`` block before:
+A ``map`` block defines the mapping between a file type and how long it will be cached. Find the ``server`` configuration block and add a ``map`` block before:
 
   .. code-block:: ini
   
     # Expires map
     map $sent_http_content_type $expires {
       default                off;
-      text/html              epoch;
-      text/css               max;
+      text/html              epoch; # no caching ask for the page on every request
+      text/css               max;   # cache the files as long as possible
       application/javascript max;
-      ~image/                max;
+      ~image/                max;   # regular expression to map all the file types containing ``image`` in their MIME type 
     }
     
     server {
