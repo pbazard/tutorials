@@ -24,3 +24,11 @@ Find the ``server`` configuration block and add a ``map`` block before:
       application/javascript max;
       ~image/                max;
     }
+    
+    server {
+      listen 80 default_server;
+      listen [::]:80 default_server;
+    
+      expires $expires;
+      ...
+    }
