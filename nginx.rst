@@ -14,11 +14,13 @@ server block configuration file.
   
 Find the ``server`` configuration block and add a ``map`` block before:
 
-  # Expires map
-  map $sent_http_content_type $expires {
-    default                off;
-    text/html              epoch;
-    text/css               max;
-    application/javascript max;
-    ~image/                max;
-  }
+  .. code-block:: ini
+  
+    # Expires map
+    map $sent_http_content_type $expires {
+      default                off;
+      text/html              epoch;
+      text/css               max;
+      application/javascript max;
+      ~image/                max;
+    }
