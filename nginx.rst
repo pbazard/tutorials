@@ -1,13 +1,28 @@
 
+Nginx Configuration File's Structure
+====================================
+Nginx consists of modules which are controlled by directives. Directives comes in two flavours: simple directives and block directives.
 
-Cache management
+  .. code-block:: ini
+    http {
+      server {
+      }
+    }
+
+
+Serving Static Content
+======================
+
+
+
+Cache Management
 ================
 
 Configuring Cache-Control and Expire headers
 --------------------------------------------
 Addition to the ETag file validation header. Cache-Control response header is newer and offers a more fine-grained control than the Expire header.
 
-With ``Nginx``, we can use the header module, which is a core Nginx module, to configure these headers. This module is added to the default
+With ``Nginx``, we can use the `header module <http://nginx.org/en/docs/http/ngx_http_headers_module.html>`_, which is a core Nginx module, to configure these headers. This module is added to the default
 server block configuration file.
 
   ``sudo vi /etc/nginx/nginx.conf``
