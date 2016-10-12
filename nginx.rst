@@ -4,10 +4,18 @@ Nginx Configuration File's Structure
 Nginx consists of modules which are controlled by directives. Directives comes in two flavours: simple directives and block directives.
 
   .. code-block:: ini
-    http {
-      server {
+  
+      http {
+        server {
+          location / {
+            root /data/www;
+          }
+          
+          location /images/ {
+            root /data;
+          }
+        }
       }
-    }
 
 
 Serving Static Content
