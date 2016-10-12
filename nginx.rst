@@ -13,9 +13,9 @@ Nginx Configuration File's Structure
 ====================================
 Nginx consists of modules which are controlled by directives. Directives comes in two flavours: simple directives and block directives.
 
-.. code-block:: ini
+  .. code-block:: ini
   
-http {
+  http {
         server {
           location / {
             root /data/www;
@@ -25,7 +25,7 @@ http {
             root /data;
           }
         }
-}
+  }
 
 How Nginx processes a request
 ============================
