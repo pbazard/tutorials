@@ -129,6 +129,6 @@ At the bottom of your file, create a new ``server`` block for redirecting all HT
        return         301 https://$server_name$request_uri;
       }
 
-Veryfing the changes
+Veryfying the changes
 --------------------
 Check that everything works properly in Chrome.
