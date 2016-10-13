@@ -30,5 +30,7 @@ Undoing things
 Unstaging a staged file
 -----------------------
 
+  git reset HEAD CONTRIBUTING.md
   
+
 
