@@ -1,3 +1,7 @@
+
+Working locally
+===============
+
 Checking the status of files
 ----------------------------
   
@@ -32,5 +36,17 @@ Unstaging a staged file
 
   git reset HEAD CONTRIBUTING.md
   
+Unmodifying a modified file
+---------------------------
+If you want to cancel a commit on a file:
 
+  git checkout -- CONTRIBUTING.md
+  
+Working with remotes
+====================
+
+
+
+
+  
 
