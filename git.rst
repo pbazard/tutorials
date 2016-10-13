@@ -22,4 +22,13 @@ or to skip the staging
 
   git commit -a -m "Commit message"
   
+Undoing things
+--------------
+
+   git commit --amend
+   
+Unstaging a staged file
+-----------------------
+
+  
 
