@@ -1,0 +1,5 @@
+Decorators
+
+Generators
+
+List comprehension
