@@ -6,6 +6,7 @@ Checking the status of files
 ----------------------------
   
   git status
+  ``git status``
   
 To have a shorter output
 
