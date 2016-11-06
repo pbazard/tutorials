@@ -13,7 +13,8 @@ In this tutorial we will use the official `Nginx image on Docker Hub <https://hu
 * Delete an existing image: ``docker rmi``
 * Download a specific image which is not the latest: ``docker pull nginx:1.9`` or ``docker run nginx:1.9``
 
-
+Dockerfile
+**********
 
 Container
 *********
