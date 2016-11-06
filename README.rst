@@ -7,7 +7,7 @@ Tutorials and Cheatsheets
 * Ubuntu
 * System d
 * Git
-* Nginx
+* `Nginx <https://github.com/pbazard/tutorials/blob/master/nginx.rst>`_
 * Python
 * Scala
 * Playframework
