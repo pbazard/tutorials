@@ -1,6 +1,6 @@
 {
   "name": "Tutorials",
   "tagline": "Tutorials and cheatsheets on Nginx, Git, Ubuntu, Python, Django, Scala....",
-  "body": "*****\r\nTutorials and Cheatsheets\r\n*****\r\n\r\n* Docker\r\n* Vim\r\n* Ubuntu\r\n* System d\r\n* Git\r\n* Nginx\r\n* Python\r\n* Scala\r\n* Playframework\r\n* Functional programming\r\n",
+  "body": "*****\r\nTutorials and Cheatsheets\r\n*****\r\n\r\n* `Docker <https://github.com/pbazard/tutorials/blob/master/docker.rst>`_\r\n* `Vim <https://github.com/pbazard/tutorials/blob/master/vim.rst>`_\r\n* Ubuntu\r\n* System d\r\n* Git\r\n* `Nginx <https://github.com/pbazard/tutorials/blob/master/nginx.rst>`_\r\n* Python\r\n* Scala\r\n* Playframework\r\n* Functional programming\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
