@@ -8,6 +8,9 @@ This is the starting point. You can either start from an existing image on `Dock
 
 * List images: ``docker images``
 * List images and their intermediate layers: ``docker images -a``
+* Delete an existing image: ``docker rmi``
+* Download an image: ``docker pull nginx:1.9``
+
 
 
 Container
