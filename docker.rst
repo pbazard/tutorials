@@ -27,3 +27,6 @@ Useful commands
 * List all active containers: ``docker ps``
 * Delete all active containers: ``docker rm $(docker ps -a -q)``
 
+Create your image on Docker Hub
+###############################
+
