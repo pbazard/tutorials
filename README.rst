@@ -1,12 +1,12 @@
-Various tutorials on:
-* Docker
-* Vim
-* Ubuntu
-* System d
-* git
-* nginx
-* python
-* ....
+Various tutorials and cheatsheets on:
+  * Docker
+  * Vim
+  * Ubuntu
+  * System d
+  * git
+  * nginx
+  * python
+  * ....
 
 
 
