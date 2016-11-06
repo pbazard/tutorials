@@ -1,16 +1,14 @@
-Various tutorials and cheatsheets on:
-  * Docker
-  * Vim
-  * Ubuntu
-  * System d
-  * git
-  * nginx
-  * python
-  * ....
+*****
+Tutorials and Cheatsheets
+*****
 
-
-
-
-
-
-http://docs.openstack.org/contributor-guide/rst-conv/inline-markups.html#code
+* Docker
+* Vim
+* Ubuntu
+* System d
+* Git
+* Nginx
+* Python
+* Scala
+* Playframework
+* Functional programming
