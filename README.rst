@@ -3,6 +3,10 @@ Various tutorials on:
 * Vim
 * Ubuntu
 * System d
+* git
+* nginx
+* python
+* ....
 
 
 
