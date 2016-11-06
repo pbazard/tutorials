@@ -2,7 +2,7 @@
 Tutorials and Cheatsheets
 *****
 
-* Docker
+* `Docker <https://github.com/pbazard/tutorials/blob/master/docker.rst>`_
 * Vim
 * Ubuntu
 * System d
