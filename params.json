@@ -1,6 +1,6 @@
 {
   "name": "Tutorials",
   "tagline": "Tutorials and cheatsheets on Nginx, Git, Ubuntu, Python, Django, Scala....",
-  "body": "#Tutorials and Cheatsheets\r\n\r\n##Docker\r\nLearn the basics of Docker images and containers [here](https://github.com/pbazard/tutorials/blob/master/docker.rst).\r\n\r\n##Vim\r\n* `Vim <https://github.com/pbazard/tutorials/blob/master/vim.rst>`_\r\n* Ubuntu\r\n* System d\r\n\r\n##Git\r\n* Git\r\n\r\n##Nginx\r\n* `Nginx <https://github.com/pbazard/tutorials/blob/master/nginx.rst>`_\r\n* Python\r\n* Scala\r\n* Playframework\r\n* Functional programming\r\n",
+  "body": "#Tutorials and Cheatsheets\r\n\r\n##Docker\r\nLearn the basics of Docker images and containers [here](https://github.com/pbazard/tutorials/blob/master/docker.rst).\r\n\r\n##Vim\r\n[Vim] (https://github.com/pbazard/tutorials/blob/master/vim.rst>).\r\n\r\n##Ubuntu\r\n##System d\r\n\r\n##Git\r\nGit\r\n\r\n##Nginx\r\nNginx <https://github.com/pbazard/tutorials/blob/master/nginx.rst>`_\r\n\r\n##Python\r\n\r\n##Scala\r\n\r\n##Playframework\r\n\r\n##Functional programming\r\n",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
