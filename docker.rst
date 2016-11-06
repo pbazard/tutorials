@@ -31,3 +31,7 @@ Useful commands
 Create your image on Docker Hub
 ###############################
 
+Continuous integration with Docker
+###############################
+
+
