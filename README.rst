@@ -11,7 +11,6 @@ Tutorials and Cheatsheets
 * Python
 * Django
 * Javascript
-* Node
 * `Node <https://github.com/pbazard/tutorials/blob/master/node.rst>`_
 * Scala
 * Playframework
