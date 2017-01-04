@@ -21,14 +21,13 @@ If you want to restart the server automatically, install Nodemon
   
 and create a script key in the package.json file
   .. code-block:: ini
-  
     {
     // ...
     "scripts": {
       "dev": "nodemon server.js"
-    }
+      }
     // ...
-  }
+    }
   
 Then you can run npm run dev to trigger nodemon server.js. Node will reload changed resources on the fly.
 
