@@ -21,6 +21,7 @@ If you want to restart the server automatically, install Nodemon
   
 and create a script key in the package.json file
   .. code-block:: ini
+  
     {
     // ...
     "scripts": {
