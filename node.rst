@@ -4,7 +4,7 @@ How to build a Node web application
 Project setup
 *****
 
-Static website
+Static resources
 *****
 
 Data model
