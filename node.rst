@@ -20,6 +20,7 @@ If you want to restart the server automatically, install Nodemon
   npm install nodemon --save-dev
   
 and create a script key in the package.json file
+  
   .. code-block:: ini
   
     {
