@@ -6,7 +6,7 @@ Tutorials and Cheatsheets
 * `Vim <https://github.com/pbazard/tutorials/blob/master/vim.rst>`_
 * Ubuntu
 * System d
-* Git
+* `Git <https://github.com/pbazard/tutorials/blob/master/git.rst>`_
 * `Nginx <https://github.com/pbazard/tutorials/blob/master/nginx.rst>`_
 * Python
 * Django
