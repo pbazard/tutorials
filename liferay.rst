@@ -6,6 +6,8 @@ Developping with Maven
 
 Maven setup
 
+  mvn archetype:generate -Dfilter=com.liferay.maven.archetypes
+
 
 
 
