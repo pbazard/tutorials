@@ -10,6 +10,7 @@ Tutorials and Cheatsheets
 * `Nginx <https://github.com/pbazard/tutorials/blob/master/nginx.rst>`_
 * Python
 * Django
+* `Liferay <https://github.com/pbazard/tutorials/blob/master/liferay.rst>`_
 * Javascript
 * `Node <https://github.com/pbazard/tutorials/blob/master/node.rst>`_
 * Scala
