@@ -6,7 +6,11 @@ Developping with Maven
 
 Maven setup
 
-  mvn archetype:generate -Dfilter=com.liferay.maven.archetypes
+Portlet
+  mvn archetype:generate -Dfilter=com.liferay.maven.archetypes:liferay-portlet-archetype
+
+Theme
+  mvn archetype:generate -Dfilter=com.liferay.maven.archetypes:liferay-theme-archetype
 
 
 
