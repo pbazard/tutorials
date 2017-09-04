@@ -2,6 +2,7 @@
 Tutorials and Cheatsheets
 *****
 
+* `Java Core<https://github.com/pbazard/tutorials/blob/master/java-core.rst>`_
 * `Docker <https://github.com/pbazard/tutorials/blob/master/docker.rst>`_
 * `Vim <https://github.com/pbazard/tutorials/blob/master/vim.rst>`_
 * Ubuntu
