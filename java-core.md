@@ -65,4 +65,19 @@ public final class Integer {
 ```
 
 #### On a method
-CANNOT BE OVERRIDEN
+Final methods CANNOT BE OVERRIDEN in subclasses. Useful to preserve a specific logic from modifications
+in subclasses.
+
+#### On a variable
+Once defined, the value cannot be changed.
+```
+final int finalValue = 5;
+```
+
+#### On an argument
+
+```
+void MethodWithFinalArgument(final int finalArgument){
+    finalArgument = 5; //Compilation Error
+}
+```
