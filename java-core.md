@@ -89,6 +89,8 @@ or using reflection like `Class.newInstance()`. That's wy you cannot access
 a non-static variable from a static context: those variables are not yet created
 at compile time.
 
+It simply does not make sense.
+
 * Can you access a non-static variable (instance variable) in a static context?
 ```
 public class StaticTest {
@@ -99,3 +101,14 @@ public class StaticTest {
 }
 ```
 
+* How to access non static variable inside static method or block?
+```
+// Create an instance of the class and access the variable
+public class StaticTest {
+    private int count = 0;
+    public static void main(String[] args){
+        StaticTest staticTest = new StaticTest();
+        test.count++;
+    }
+}
+```
