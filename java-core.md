@@ -1,6 +1,14 @@
 
 
 
+# String
+
+## StringBuffer
+
+## StringBuilder
+
+## Questions
+* What is the difference between StringBuffer and StrinBuilder in Java?
 
 
 
@@ -65,19 +73,29 @@ public final class Integer {
 ```
 
 #### On a method
-Final methods CANNOT BE OVERRIDEN in subclasses. Useful to preserve a specific logic from modifications
-in subclasses.
+CANNOT BE OVERRIDEN
 
-#### On a variable
-Once defined, the value cannot be changed.
-```
-final int finalValue = 5;
-```
+### Static
+This keyword can be used to create static variables, methods or classes. Java 5
+also introduced static imports which allows to import static members of one class
+into aonther one and allowing to use them like they are member of this class.
 
-#### On an argument
+There is only one copy of the static variable in the heap which can be accessed
+and altered by any object.
 
+Static variables or methods are initialized when the class is loaded in the JVM.
+On the other hand, instance members are created either by using the `new()` operator 
+or using reflection like `Class.newInstance()`. That's wy you cannot access
+a non-static variable from a static context: those variables are not yet created
+at compile time.
+
+* Can you access a non-static variable (instance variable) in a static context?
 ```
-void MethodWithFinalArgument(final int finalArgument){
-    finalArgument = 5; //Compilation Error
+public class StaticTest {
+    private int count = 0;
+    public static void main(String[] args){
+        count++; // COMPILER ERROR: non-static variable cannot...
+    }
 }
 ```
+
