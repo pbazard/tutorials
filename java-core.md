@@ -8,7 +8,7 @@
 ## StringBuilder
 
 ## Questions
-* What is the difference between StringBuffer and StrinBuilder in Java?
+* What is the difference between StringBuffer and StringBuilder in Java?
 
 
 
