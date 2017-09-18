@@ -47,6 +47,7 @@ List tags
 ---------
 
 After the clone, you can list the tags with 
+
   ``git tag -l`` 
 
 and then checkout a specific tag:
