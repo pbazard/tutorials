@@ -42,6 +42,21 @@ If you want to cancel a commit on a file:
 
   ``git checkout -- CONTRIBUTING.md``
   
+List tags
+---------
+After the clone, you can list the tags with 
+  ``git tag -l`` 
+
+and then checkout a specific tag:
+
+
+  ``git checkout tags/<tag_name>``
+
+Checkout and create a branch 
+-----------------------------
+
+  ``git checkout tags/<tag_name> -b <branch_name>``
+
 Working with remotes
 ====================
 
