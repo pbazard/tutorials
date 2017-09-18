@@ -38,17 +38,18 @@ Unstaging a staged file
   
 Unmodifying a modified file
 ---------------------------
+
 If you want to cancel a commit on a file:
 
   ``git checkout -- CONTRIBUTING.md``
   
 List tags
 ---------
+
 After the clone, you can list the tags with 
   ``git tag -l`` 
 
 and then checkout a specific tag:
-
 
   ``git checkout tags/<tag_name>``
 
