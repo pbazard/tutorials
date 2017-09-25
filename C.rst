@@ -1,5 +1,15 @@
 
 
+Arrays
+======
+How to declare an array in C.
+
+``#define MAX_SIZE n
+...
+int array[MAX_SIZE]
+``
+
+
 Make
 ----
 All actions, rules etc... are identified by tabs. To make sure that tabs are correctly inserted in the makefile, enter
