@@ -4,10 +4,11 @@ Arrays
 ======
 How to declare an array in C.
 
-``#define MAX_SIZE n
-...
-int array[MAX_SIZE]
-``
+  ``
+  #define MAX_SIZE n
+  ...
+  int array[MAX_SIZE]
+  ``
 
 
 Make
