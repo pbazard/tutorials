@@ -4,7 +4,7 @@ C Programming
 
 Arrays
 ======
-How to declare an array in C99.
+How to declare an array in C99.::
 
    #define MAX_SIZE n
    
