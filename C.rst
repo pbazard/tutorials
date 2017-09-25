@@ -2,14 +2,13 @@
 
 Arrays
 ======
-How to declare an array in C.
+How to declare an array in C99.
 
-  ``
+  
   #define MAX_SIZE n
   ...
-  int array[MAX_SIZE]
-  ``
-
+  int array[MAX_SIZE];
+  
 
 Make
 ----
