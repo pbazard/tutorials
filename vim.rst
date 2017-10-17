@@ -37,7 +37,7 @@ Back half screen: ``CTRL + u``
 Working with buffers
 --------------------
 
-List of buffers: ``ls``
+List of buffers: ``:ls``
 
 Next buffer: ``:bn``
 
