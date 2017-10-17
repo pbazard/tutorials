@@ -23,3 +23,14 @@ on the command line.
 
 ``^I`` represents a tab
 ``$`` represents end of line.
+
+Creating a static library
+-------------------------
+
+   gcc -c xxxx.c -o xxxx.o
+   ar rcs libxxxx.a xxxx.o
+   gcc -static main.c -L. lxxxx -o statically_linked
+   
+Creating a dynamic library
+--------------------------
+
