@@ -6,6 +6,8 @@ Number of lines in a file: ``:echo line('$')``
 
 File explorer: ``Sex``
 
+Create a new file: ``:e filename``
+
 Forward one word: ``w``
 
 Backward one word: ``b``
