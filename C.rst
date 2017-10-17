@@ -24,7 +24,7 @@ on the command line.
 ``^I`` represents a tab
 ``$`` represents end of line.
 
-Creating a static library
+Creating a static library::
 -------------------------
 
    gcc -c xxxx.c -o xxxx.o
