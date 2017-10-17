@@ -27,6 +27,8 @@ on the command line.
 Creating a static library
 -------------------------
 
+On linux::
+
    gcc -c xxxx.c -o xxxx.o
    
    ar rcs libxxxx.a xxxx.o
@@ -36,4 +38,5 @@ Creating a static library
    
 Creating a dynamic library
 --------------------------
+On linux::
 
