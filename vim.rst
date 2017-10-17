@@ -49,4 +49,12 @@ Delete buffer: ``:bd`` or ``:bd!``
 
 Create a vertical split and show buffer number 3 in the window to the left: ``:vertical sb 3``
 
+Other useful stuff
+------------------
+
+How to remove all lines containing a "certain pattern": ``:g/certain\ pattern/d``
+
+How to remove all blank lines: ``:g/^$/d``
+
+
 
