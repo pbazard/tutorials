@@ -35,8 +35,30 @@ On linux::
    
    gcc -static main.c -L. lxxxx -o statically_linked
    
-   
+Apple MacOs does not support static linking.
+
 Creating a dynamic library
 --------------------------
 On linux::
+   
+   gcc
+   
+On MacOs::
+   
+   gcc -dynamiclib -o libxxxx.dylib xxxx.c
+   
+Verify the library::
+
+   file libhello.dylib
+   
+You should get::
+
+   libxxxx.dylib: Mach-O 64-bit dynamically linked shared library x86_64
+   
+Finally, compile your application and execute it::
+
+   gcc -L. -lxxxx -o mainsl main.c
+   
+   ./mainsl
+   
 
