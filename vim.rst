@@ -21,3 +21,11 @@ Select current paragraph: ``vip``
 Search: ``/pattern``
 
 Search a specific word: ``*``
+
+Back full screen: ``CTRL + b``
+
+Forward full screen: ``CTRL + f``
+
+Forward half screen: ``CTRL + d``
+
+Back half screen: ``CTRL + u``
