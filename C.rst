@@ -56,9 +56,9 @@ You should get::
 
    libxxxx.dylib: Mach-O 64-bit dynamically linked shared library x86_64
    
-Finally, compile your application and execute it::
+Finally, compile your application, link it to your library or libraries execute it::
 
-   gcc -L. -lxxxx -o mainsl main.c
+   gcc -L. -lxxxx -lyyyy -o mainsl main.c
    
    ./mainsl
    
