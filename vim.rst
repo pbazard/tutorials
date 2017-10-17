@@ -4,6 +4,8 @@ Display line number: ``:se nu``
 
 Number of lines in a file: ``:echo line('$')``
 
+File explorer: ``Sex``
+
 Forward one word: ``w``
 
 Backward one word: ``b``
