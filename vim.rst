@@ -45,3 +45,8 @@ Previous buffer: ``:bp``
 
 Specific buffer: ``:b2`` for example
 
+Delete buffer: ``:bd`` or ``:bd!``
+
+Create a vertical split and show buffer number 3 in the window to the left: ``:vertical sb 3``
+
+
