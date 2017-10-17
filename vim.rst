@@ -14,10 +14,10 @@ Redo the last action: ``.``
 
 Delete an entire line and stay in edit mode: ``dd``
 
-Delete an entire line and switch to insert mode: ``cw``
+Delete an entire line and switch to insert mode: ``cc``
 
 Select current paragraph: ``vip``
 
-Search: ``/pattern`
+Search: ``/pattern``
 
 Search a specific word: ``*``
