@@ -27,8 +27,9 @@ on the command line.
 Creating a static library
 -------------------------
 
-On linux::
 
+On linux::
+**********************
    gcc -c xxxx.c -o xxxx.o
    
    ar rcs libxxxx.a xxxx.o
@@ -49,7 +50,7 @@ On MacOs::
    
 Verify the library::
 
-   file libhello.dylib
+   file libxxxx.dylib
    
 You should get::
 
