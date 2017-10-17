@@ -33,3 +33,15 @@ Forward full screen: ``CTRL + f``
 Forward half screen: ``CTRL + d``
 
 Back half screen: ``CTRL + u``
+
+Working with buffers
+--------------------
+
+List of buffers: ``ls``
+
+Next buffer: ``:bn``
+
+Previous buffer: ``:bp``
+
+Specific buffer: ``:b2`` for example
+
