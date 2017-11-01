@@ -25,9 +25,7 @@ Example program::
   int * const ptr = &var; // being constant, ptr is initialized here
   printf("Value of var is %d\n",var);
   printf("Value of ptr is %d\n",*ptr);
-  // would generates compile time error because ptr1 is a read-only pointer
-  // ptr cannot be used to modify the value of var
-  //*ptr=20;
+  //*ptr=20; would generates compile time error because it is a read-only pointer
   var=20;
   printf("New value of var is %d\n",var);
   printf("New value of ptr is %d\n",*ptr);
@@ -35,23 +33,27 @@ Example program::
 
 The `ptr` itself is constant and cannot be changed.
 
-   char *const ptr
+   int *const ptr
 
 This should be read as a constant pointer of type char.
 
 Example program::
 
+```C
   char var1='A';
   char var2='B';
   char *const ptr=&var1;
-  ptr=&var2; // Generates compile time error because ptr1 is declared constant and cannot be reassigned
+  ptr=&var2; // Generates compile time error because ptr1 is declared constant and cannot be reassigned
+```
 
 We can combine both and write ``const char * const ptr`` and in this case, both the char and the pointer are constants.
 
 Real functions using ``const char *``. The ``printf`` or ``puts`` functions in the standard library::
 
-   int	 printf(const char * __restrict, ...) __printflike(1, 2);
-   int	 puts(const char *);
+```C
+int	 printf(const char * __restrict, ...) __printflike(1, 2);
+int	 puts(const char *);
+```
 
 ## Arrays
 To create an array, choose the type of the elements stored in the array, choose the size (optional), and stor the data in the array::
