@@ -11,7 +11,9 @@ The location pointed by ``ptr`` cannot be changed or the value pointed at is can
 Example program
 
    char sign1='A';
+   
    char letter2='B';
+   
    const char * ptr1 = &a;
    char * ptr2 = &a;
    printf("%c\n",*ptr2);
