@@ -3,6 +3,13 @@
 
 ## Pointers
 
+Pointer to an integer
+```C
+int *
+```
+
+
+
 Pointer to a const integer.
 
 ```C
@@ -48,9 +55,13 @@ Example program:
   ptr=&var2; // Generates compile time error because ptr1 is declared constant and cannot be reassigned
 ```
 
-We can combine both and write ``const char * const ptr`` and in this case, both the char and the pointer are constants.
+Constant pointer to a constant integer
 
-Real functions using ``const char *``. The ``printf`` or ``puts`` functions in the standard library::
+```C
+int const * const
+```
+
+Real functions using ``const char *``. The ``printf`` or ``puts`` functions in the standard library. Examples taken from `<stdio.h>`.
 
 ```C
   int	 printf(const char * __restrict, ...) __printflike(1, 2);
@@ -105,6 +116,8 @@ is that in the later case, we work with a string constant that cannot be changed
 ## Command-line parameters
 
 Let's explain ``int argc`` and ``char const *argv[]``...
+
+## The preprocessor
 
 ## Toolbox
 
