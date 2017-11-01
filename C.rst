@@ -4,9 +4,21 @@ C Programming
 
 Pointers
 ========
-The location pointed by ``ptr`` cannot be changed or the value pointed at is constant. It can be viewed as a "Read only" pointer.
+The location pointed by ``ptr`` cannot be changed or the value pointed at is cannot be changed by this pointer. It can be viewed as a read-only pointer.
 
    const char * ptr
+   
+Example program
+
+   char sign1='A';
+   char letter2='B';
+   const char * ptr1 = &a;
+   char * ptr2 = &a;
+   printf("%c\n",*ptr2);
+   //*ptr1='C'; //generates compile time error because ptr1 is a read-only pointer
+   *ptr2='C'; //ptr2 can change the value of a
+   printf("%c\n",a);
+   
    
 The ``ptr`` itself is constant and cannot be changed
 
