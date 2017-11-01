@@ -36,6 +36,10 @@ Example program::
 
 We can combine both and write ``const char * const ptr`` and in this case, both the char and the pointer are constants.
 
+Real functions using ``const char *``. The ``printf`` function in the standard library::
+
+   int	 printf(const char * __restrict, ...) __printflike(1, 2);
+
 Arrays
 ======
 To create an array, choose the type of the elements stored in the array, choose the size (optional), and stor the data in the array::
@@ -43,7 +47,14 @@ To create an array, choose the type of the elements stored in the array, choose 
    char str_a[20];
    
 or::
-   char str_a[];
+
+   char str_a[]="abc123"; //The size of the array is optional
+
+or::
+
+   char str_a[7]="abc123"; //Don't forget the \0 last character
+   
+
 
 Why arrays can be dangerous...
 
