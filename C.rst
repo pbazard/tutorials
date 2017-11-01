@@ -71,11 +71,11 @@ In C, strings are arrays of characters. A pointer stores the memory address of t
 
 The difference between::
    
-   char str_a[7]="abc123";
+   char str_a[7]="abc123"; //Read Write memory
    
 and::
    
-   char *p_str = "abc123";
+   char *p_str = "abc123"; //Read memory
    
 is that in the later case, we work with a string constant that cannot be changed. In the first case, we have an array of character variables; therefore we can change the content.   
 
