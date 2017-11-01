@@ -3,10 +3,17 @@
 
 ## Pointers
 
-The location pointed by `ptr` cannot be changed or the value pointed at is cannot be changed **by** this pointer. It can be viewed as a read-only pointer.
+Pointer to a const integer.
 
 ```C
-int * const ptr
+int const *
+```
+
+
+A constant pointer to an integer.
+
+```C
+int * const
 ```
 
 This should be read as a pointer to a `const int` (see the [Clockwise rule](http://c-faq.com/decl/spiral.anderson.html)).
@@ -16,11 +23,12 @@ Example program::
 ```C
   int var=10;
   int * const ptr = &var; // being constant, ptr is initialized here
-  printf("var=%d\n",var);
-  printf("ptr=%d\n",ptr);
+  printf("Value of var is %d\n",var);
+  printf("Value of ptr is %d\n",*ptr);
   //*ptr1=20; // generates compile time error because ptr1 is a read-only pointer
   var=20;
-  printf("%d\n",ptr);
+  printf("New value of var is %d\n",var);
+  printf("New value of ptr is %d\n",*ptr);
 ```
 
 The `ptr` itself is constant and cannot be changed.
