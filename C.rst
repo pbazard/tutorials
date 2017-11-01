@@ -30,9 +30,8 @@ Example program::
 
   char var1='A';
   char var2='B';
-  printf("%c\n",var1);
-  char * const ptr=&var1;
-  ptr=&var2; // Generates compile time error because ptr1 is declared constant
+  char *const ptr=&var1;
+  ptr=&var2; // Generates compile time error because ptr1 is declared constant and cannot be reassigned
 
 Arrays
 ======
