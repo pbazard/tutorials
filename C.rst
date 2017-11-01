@@ -4,8 +4,6 @@ C Programming
 
 Pointers
 ========
-
-
 The location pointed by ptr cannot be changed or the value pointed at is constant.
    const char * ptr
    
