@@ -7,13 +7,13 @@ The location pointed by `ptr` cannot be changed or the value pointed at is canno
 
 ```C
 const char *ptr
-```   
+```
 
 This should be read as `const char *pointer` (see Clock, **BUT** the value pointed at is **NOT** itself a constant; it can be changed by another pointer for example. One use case could be to provide access to a file, for example, in read-only mode for a certain type of users and in read-write mode for the owner of the file.
 
 Example program::
 
-```
+```C
   char var1='A';
   printf("%c\n",var1);
   const char *ptr1 = &var1;
