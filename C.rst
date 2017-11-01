@@ -38,6 +38,13 @@ We can combine both and write ``const char * const ptr`` and in this case, both 
 
 Arrays
 ======
+To create an array, choose the type of the elements stored in the array, choose the size (optional), and stor the data in the array::
+
+   char str_a[20];
+   
+or::
+   char str_a[];
+
 Why arrays can be dangerous...
 
 How to declare an array in C99::
@@ -48,6 +55,7 @@ How to declare an array in C99::
 
 Strings
 ======
+In C, strings are arrays of characters. A pointer stores the memory address of the first element of the array: ``char *ptr = "Hello, World!"``. As seen in the previous section, the elements of an array occupy contiguous blocks of memory.
 
 Command line parameters
 =======================
