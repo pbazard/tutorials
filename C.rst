@@ -34,7 +34,7 @@ Example program::
   char *const ptr=&var1;
   ptr=&var2; // Generates compile time error because ptr1 is declared constant and cannot be reassigned
 
-We can combine both and write ``const char * const ptr``.
+We can combine both and write ``const char * const ptr`` and in this case, both the char and the pointer are constants.
 
 Arrays
 ======
