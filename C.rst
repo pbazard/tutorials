@@ -4,10 +4,12 @@ C Programming
 
 Pointers
 ========
-The location pointed by ptr cannot be changed or the value pointed at is constant.
+The location pointed by ptr cannot be changed or the value pointed at is constant
+
    const char * ptr
    
-The ptr itself is constant and cannot be changed   
+The ptr itself is constant and cannot be changed
+
    char * const ptr
 
 Arrays
