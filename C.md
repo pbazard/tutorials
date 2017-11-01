@@ -25,7 +25,9 @@ Example program::
   int * const ptr = &var; // being constant, ptr is initialized here
   printf("Value of var is %d\n",var);
   printf("Value of ptr is %d\n",*ptr);
-  //*ptr1=20; // generates compile time error because ptr1 is a read-only pointer
+  // would generates compile time error because ptr1 is a read-only pointer
+  // ptr cannot be used to modify the value of var
+  //*ptr=20;
   var=20;
   printf("New value of var is %d\n",var);
   printf("New value of ptr is %d\n",*ptr);
