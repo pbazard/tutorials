@@ -20,7 +20,9 @@ Example program::
   //*ptr1='C'; //generates compile time error because ptr1 is a read-only pointer
   *ptr2='C'; //ptr2 can change the value of var1 from 'A' to 'C'
   printf("%c\n",var1);
-   
+  
+If we write ``const char * const`` the we have a pointer that cannot change someting that cannot be changed because it is constant.
+   
 The ``ptr`` itself is constant and cannot be changed.
 
    char *const ptr
