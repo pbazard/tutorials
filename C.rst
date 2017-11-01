@@ -4,7 +4,7 @@ C Programming
 
 Pointers
 ========
-The location pointed by ``ptr`` cannot be changed or the value pointed at is constant
+The location pointed by ``ptr`` cannot be changed or the value pointed at is constant. It can be viewed as a "Read only" pointer.
 
    const char * ptr
    
