@@ -18,9 +18,9 @@ Example program::
   int * const ptr = &var; // being constant, ptr is initialized here
   printf("var=%d\n",var);
   printf("ptr=%d\n",ptr);
-  //*ptr1='C'; // generates compile time error because ptr1 is a read-only pointer
-  *ptr2='C'; // ptr2 can change the value of var1 from 'A' to 'C'
-  printf("%c\n",var1);
+  //*ptr1=20; // generates compile time error because ptr1 is a read-only pointer
+  var=20;
+  printf("%d\n",ptr);
 ```
 
 The `ptr` itself is constant and cannot be changed.
