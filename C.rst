@@ -8,7 +8,7 @@ The location pointed by ``ptr`` cannot be changed or the value pointed at is can
 
    const char * ptr
    
-Example program
+Example program::
 
    char sign1='A';
    
