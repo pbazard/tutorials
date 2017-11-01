@@ -18,7 +18,7 @@ int * const
 
 This should be read as a pointer to a `const int` (see the [Clockwise rule](http://c-faq.com/decl/spiral.anderson.html)).
 
-Example program::
+Example program:
 
 ```C
   int var=10;
@@ -33,7 +33,9 @@ Example program::
 
 The `ptr` itself is constant and cannot be changed.
 
-   int *const ptr
+```C
+   int *const ptr
+```
 
 This should be read as a constant pointer of type char.
 
@@ -51,8 +53,8 @@ We can combine both and write ``const char * const ptr`` and in this case, both 
 Real functions using ``const char *``. The ``printf`` or ``puts`` functions in the standard library::
 
 ```C
-int	 printf(const char * __restrict, ...) __printflike(1, 2);
-int	 puts(const char *);
+  int	 printf(const char * __restrict, ...) __printflike(1, 2);
+  int	 puts(const char *);
 ```
 
 ## Arrays
@@ -65,13 +67,13 @@ To create an array, choose the type of the elements stored in the array, choose 
 or:
 
 ```C
-char str_a[]="abc123"; //The size of the array is optional
+  char str_a[]="abc123"; //The size of the array is optional
 ```
 
 or:
 
 ```C
-char str_a[7]="abc123"; //Don't forget the \0 last character
+  char str_a[7]="abc123"; //Don't forget the \0 last character
 ```   
 
 Why arrays can be dangerous...
