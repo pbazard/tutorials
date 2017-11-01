@@ -8,7 +8,7 @@ The location pointed by ``ptr`` cannot be changed or the value pointed at is can
 
    const char *ptr
    
-This should be read as ``[const char] pointer``.
+This should be read as ``[const char] pointer`` or pointer to a const char.
 
 Example program::
 
