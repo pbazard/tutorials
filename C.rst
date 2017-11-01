@@ -4,11 +4,11 @@ C is easy
 
 Pointers
 ========
-The location pointed by ``ptr`` cannot be changed or the value pointed at is cannot be changed by this pointer. It can be viewed as a read-only pointer.
+The location pointed by ``ptr`` cannot be changed or the value pointed at is cannot be changed **by** this pointer. It can be viewed as a read-only pointer.
 
    const char *ptr
    
-This should be read as ``[const char] pointer`` or pointer to a const char, BUT the value pointed at is NOT constant; it can be changed by another pointer for example. One use case could be to provide access to a file, for example, in read-only mode for a certain type of users and in read-write mode for the owner of the file.
+This should be read as ``[const char] pointer`` or pointer to a const char, **BUT** the value pointed at is **NOT** itself a constant; it can be changed by another pointer for example. One use case could be to provide access to a file, for example, in read-only mode for a certain type of users and in read-write mode for the owner of the file.
 
 Example program::
 
