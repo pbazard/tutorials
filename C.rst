@@ -4,16 +4,6 @@ C is easy
 
 Pointers
 ========
-
-
-what
-  Definition lists associate a term with a definition.
-
-*how*
-  The term is a one-line phrase, and the definition is one or more
-  paragraphs or body elements, indented relative to the term.
-  Blank lines are not allowed between term and definition.
-
 The location pointed by ``ptr`` cannot be changed or the value pointed at is cannot be changed **by** this pointer. It can be viewed as a read-only pointer.
 
    const char *ptr
