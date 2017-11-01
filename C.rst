@@ -46,6 +46,9 @@ How to declare an array in C99::
 Strings
 ======
 
+Command line parameters
+=======================
+Let's explain ``int argc`` and ``char *argv[]``...
 
 Make
 ----
