@@ -132,4 +132,7 @@ Finally, compile your application, link it to your library or libraries execute 
    
    ./mainsl
    
-
+Resources
+=========
+The technique called "Clockwise/spiral rule" helps to parse any C declaration.
+http://c-faq.com/decl/spiral.anderson.html
