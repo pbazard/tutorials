@@ -36,9 +36,10 @@ Example program::
 
 We can combine both and write ``const char * const ptr`` and in this case, both the char and the pointer are constants.
 
-Real functions using ``const char *``. The ``printf`` function in the standard library::
+Real functions using ``const char *``. The ``printf`` or ``puts`` functions in the standard library::
 
    int	 printf(const char * __restrict, ...) __printflike(1, 2);
+   int	 puts(const char *);
 
 Arrays
 ======
@@ -67,6 +68,16 @@ How to declare an array in C99::
 Strings
 ======
 In C, strings are arrays of characters. A pointer stores the memory address of the first element of the array: ``char *ptr = "Hello, World!"``. As seen in the previous section, the elements of an array occupy contiguous blocks of memory.
+
+The difference between::
+   
+   char str_a[7]="abc123";
+   
+and::
+   
+   char *p_str = "abc123";
+   
+is that in the later case, we work with a string constant that cannot be changed. In the first case, we have an array of character variables; therefore we can change the content.   
 
 Command line parameters
 =======================
