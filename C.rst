@@ -6,8 +6,10 @@ Pointers
 ========
 The location pointed by ``ptr`` cannot be changed or the value pointed at is cannot be changed by this pointer. It can be viewed as a read-only pointer.
 
-   const char * ptr
+   const char *ptr
    
+This should be read as ``[const char] pointer``.
+
 Example program::
 
   char var1='A';
@@ -15,12 +17,14 @@ Example program::
   const char *ptr1 = &var1;
   char *ptr2 = &var1;
   //*ptr1='C'; //generates compile time error because ptr1 is a read-only pointer
-  *ptr2='C'; //ptr2 can change the value of a
+  *ptr2='C'; //ptr2 can change the value of var1 from 'A' to 'C'
   printf("%c\n",var1);
    
-The ``ptr`` itself is constant and cannot be changed
+The ``ptr`` itself is constant and cannot be changed.
 
-   char * const ptr
+   char *const ptr
+
+This should be read as a constant pointer of type char.
 
 Arrays
 ======
