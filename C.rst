@@ -10,17 +10,13 @@ The location pointed by ``ptr`` cannot be changed or the value pointed at is can
    
 Example program::
 
-   char sign1='A';
-   
-   char letter2='B';
-   
-   const char * ptr1 = &a;
-   char * ptr2 = &a;
-   printf("%c\n",*ptr2);
-   //*ptr1='C'; //generates compile time error because ptr1 is a read-only pointer
-   *ptr2='C'; //ptr2 can change the value of a
-   printf("%c\n",a);
-   
+  char var1='A';
+  printf("%c\n",var1);
+  const char *ptr1 = &var1;
+  char *ptr2 = &var1;
+  //*ptr1='C'; //generates compile time error because ptr1 is a read-only pointer
+  *ptr2='C'; //ptr2 can change the value of a
+  printf("%c\n",var1);
    
 The ``ptr`` itself is constant and cannot be changed
 
