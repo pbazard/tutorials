@@ -1,25 +1,27 @@
 
 # C is easy
 
-# Pointers
+## Pointers
 
-The location pointed by ``ptr`` cannot be changed or the value pointed at is cannot be changed **by** this pointer. It can be viewed as a read-only pointer.
-
-   const char *ptr
-   
-This should be read as ``[const char] pointer``, **BUT** the value pointed at is **NOT** itself a constant; it can be changed by another pointer for example. One use case could be to provide access to a file, for example, in read-only mode for a certain type of users and in read-write mode for the owner of the file.
+The location pointed by `ptr` cannot be changed or the value pointed at is cannot be changed **by** this pointer. It can be viewed as a read-only pointer.
+```
+   const char *ptr
+```   
+This should be read as `const char *pointer` (see Clock, **BUT** the value pointed at is **NOT** itself a constant; it can be changed by another pointer for example. One use case could be to provide access to a file, for example, in read-only mode for a certain type of users and in read-write mode for the owner of the file.
 
 Example program::
 
+```
   char var1='A';
   printf("%c\n",var1);
   const char *ptr1 = &var1;
   char *ptr2 = &var1;
   //*ptr1='C'; //generates compile time error because ptr1 is a read-only pointer
   *ptr2='C'; //ptr2 can change the value of var1 from 'A' to 'C'
-  printf("%c\n",var1);
-   
-The ``ptr`` itself is constant and cannot be changed.
+  printf("%c\n",var1);
+```
+
+The `ptr` itself is constant and cannot be changed.
 
    char *const ptr
 
