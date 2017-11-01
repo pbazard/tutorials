@@ -8,7 +8,7 @@ The location pointed by ``ptr`` cannot be changed or the value pointed at is can
 
    const char *ptr
    
-This should be read as ``[const char] pointer`` or pointer to a const char.
+This should be read as ``[const char] pointer`` or pointer to a const char, BUT the value pointed at is NOT constant; it can be changed by another pointer for example. One use case could be to provide access to a file, for example, in read-only mode for a certain type of users and in read-write mode for the owner of the file.
 
 Example program::
 
@@ -25,6 +25,14 @@ The ``ptr`` itself is constant and cannot be changed.
    char *const ptr
 
 This should be read as a constant pointer of type char.
+
+Example program::
+
+  char var1='A';
+  char var2='B';
+  printf("%c\n",var1);
+  char * const ptr=&var1;
+  ptr=&var2; // Generates compile time error because ptr1 is declared constant
 
 Arrays
 ======
