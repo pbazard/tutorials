@@ -62,7 +62,7 @@ To create an array, choose the type of the elements stored in the array, choose 
 
 ```C
    char str_a[20];
-```   
+```
 
 or:
 
@@ -74,7 +74,7 @@ or:
 
 ```C
   char str_a[7]="abc123"; //Don't forget the \0 last character
-```   
+```
 
 Why arrays can be dangerous...
 
