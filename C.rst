@@ -2,6 +2,16 @@
 C Programming
 =============
 
+Pointers
+========
+
+
+
+   const char * ptr
+   
+   
+   char * const ptr
+
 Arrays
 ======
 Why arrays are dangerous...
@@ -11,7 +21,10 @@ How to declare an array in C99::
    #define MAX_SIZE n
    
    int array[MAX_SIZE];
-  
+
+Strings
+======
+
 
 Make
 ----
