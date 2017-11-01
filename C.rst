@@ -1,5 +1,5 @@
 
-C Programming
+C is easy
 =============
 
 Pointers
@@ -35,7 +35,7 @@ Example program::
 
 Arrays
 ======
-Why arrays are dangerous...
+Why arrays can be dangerous...
 
 How to declare an array in C99::
 
@@ -48,7 +48,7 @@ Strings
 
 Command line parameters
 =======================
-Let's explain ``int argc`` and ``char *argv[]``...
+Let's explain ``int argc`` and ``char const *argv[]``...
 
 Make
 ----
