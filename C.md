@@ -56,40 +56,43 @@ int	 puts(const char *);
 ```
 
 ## Arrays
-To create an array, choose the type of the elements stored in the array, choose the size (optional), and stor the data in the array::
-
-   char str_a[20];
-   
-or::
-
-   char str_a[]="abc123"; //The size of the array is optional
-
-or::
-
-   char str_a[7]="abc123"; //Don't forget the \0 last character
-   
-
+To create an array, choose the type of the elements stored in the array, choose the size (optional), and stor the data in the array:
+```C
+   char str_a[20];
+```   
+or:
+```C
+char str_a[]="abc123"; //The size of the array is optional
+```
+or:
+```C
+char str_a[7]="abc123"; //Don't forget the \0 last character
+```   
 
 Why arrays can be dangerous...
 
 How to declare an array in C99::
 
-   #define MAX_SIZE n
-   
-   int array[MAX_SIZE];
+```C
+#define MAX_SIZE n
+int array[MAX_SIZE];
+```
 
 ## Strings
 
 In C, strings are arrays of characters. A pointer stores the memory address of the first element of the array: ``char *ptr = "Hello, World!"``. As seen in the previous section, the elements of an array occupy contiguous blocks of memory.
 
-The difference between::
-   
-   char str_a[7]="abc123"; //Read Write memory
-   
-and::
-   
-   char *p_str = "abc123"; //Read memory
-   
+The difference between:
+
+```C   
+   char str_a[7]="abc123"; //Read Write memory
+```   
+and:
+
+```C
+char *p_str = "abc123"; //Read memory
+```
+
 is that in the later case, we work with a string constant that cannot be changed. In the first case, we have an array of character variables; therefore we can change the content.   
 
 ## Command-line parameters
@@ -103,7 +106,7 @@ Let's explain ``int argc`` and ``char const *argv[]``...
 ### Make
 All actions, rules etc... are identified by tabs. To make sure that tabs are correctly inserted in the makefile, enter
 
-``cat -e -t -v makefile_name`` 
+`cat -e -t -v makefile_name`
 
 on the command line.
 
@@ -125,28 +128,19 @@ Apple MacOs does not support static linking.
 
 #### Creating a dynamic library
 
-On linux::
-   
-   gcc
-   
+On linux `gcc`
+   
 On MacOs::
-   
-   gcc -dynamiclib -o libxxxx.dylib xxxx.c
-   
-Verify the library::
+```C   
+   gcc -dynamiclib -o libxxxx.dylib xxxx.c
+```
 
-   file libxxxx.dylib
+Verify the library `file libxxxx.dylib`. You should get `libxxxx.dylib: Mach-O 64-bit dynamically linked shared library x86_64
+`.
    
-You should get::
-
-   libxxxx.dylib: Mach-O 64-bit dynamically linked shared library x86_64
-   
-Finally, compile your application, link it to your library or libraries execute it::
-
-   gcc -L. -lxxxx -lyyyy -o mainsl main.c
-   
-   ./mainsl
-   
+Finally, compile your application, link it to your library or libraries execute it `gcc -L. -lxxxx -lyyyy -o mainsl main.c`
+and execute it `./mainsl`.
+   
 ## Resources
 
 The technique called "Clockwise/spiral rule" helps to parse any C declaration and can be found [here](http://c-faq.com/decl/spiral.anderson.html).
