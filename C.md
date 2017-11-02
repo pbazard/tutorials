@@ -36,9 +36,12 @@ Given a letter, we can make capital or lowercase by just turnion on/off the thir
 Here is the code to represent the binary representation of a character:
 
 ```C
+char letter = 'A';
+int i;
 for(i=0; i<8; i++) {
   printf("%d", !!((letter << i) & 0x80));
 }
+printf("\n");
 ```
 
 ## Pointers
