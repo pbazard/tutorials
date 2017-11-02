@@ -1,6 +1,8 @@
 
 # C is easy
 
+[Arrays](##Arrays)
+
 ## Data types
 
 ### Numeric datatypes
@@ -87,7 +89,7 @@ Real functions using ``const char *``. The ``printf`` or ``puts`` functions in t
 
 ```C
   int	 printf(const char * __restrict, ...) __printflike(1, 2);
-  int	 puts(const char *);
+  int	 puts(const char  *);
 ```
 
 ## Arrays
