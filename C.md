@@ -192,7 +192,8 @@ on the command line.
 ``^I`` represents a tab
 ``$`` represents end of line.
 
-#### Creating a static library
+## Creating libraries
+#### Static library
 On linux::
 ```C
 gcc -c xxxx.c -o xxxx.o
@@ -201,7 +202,7 @@ gcc -static main.c -L. lxxxx -o statically_linked
 ``` 
 Apple MacOs does not support static linking.
 
-#### Creating a dynamic library
+#### Dynamic library
 
 On linux `gcc`
    
