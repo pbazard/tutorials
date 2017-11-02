@@ -14,22 +14,31 @@
 * [Resources](#resources)
 
 ## Introduction
+
+*No website is as good as a good book. And no good book is as good as a disassembly output*.
+
 This tutorial is intended for people who have a background in programming. Rather than developing a simple Hello world program and add complexity, we prefer to present how to create real complex program from the start. Therefore, you need to have some basic knowledge of how a language works and how you run it.
 
 ## Programming in C
-Pogramming in C necessitates to create source code files with the extension `*.c` and, optinally, `*.h` header files.
 
-Before executing a program in C we have to follow 3 mandatory steps:
+### The basics of a C program
+Programming in C necessitates to create source code files with the extension `*.c` and, optionally, `*.h` header files.
+
+Once these files are created, we need to create an executable, like `exe` file on Windows.
+
+For this, a program in C we have to follow 3 mandatory steps:
 * preprocessing
 * compiling
 * linking
 
 ### Preprocessing
-In this phase, the
+In this phase, the all the `#include`, `#define`,... statements are replaced by their implementation.
 
 ### Compiling
+This is where the compiler like `gcc` or `clang` comes into play. A file with extension `*.obj` is/are created.
 
 ### Linking
+This phase is done by another program, the linker. It links your program with external libraries.
 
 ## Data types
 
@@ -47,9 +56,9 @@ Size modifiers allow to specify how much space is allocated to a number
 * `signed`: positive and negative values
 * `unsigned`: positive values only
 
-Example: 
+Example:
 
-```C 
+```C
 unsigned short int total=5;
 ```
 
@@ -62,7 +71,7 @@ ASCII characters occupy 1 byte aka 8 bits (not universal but is usually the case
 
 Given a letter, we can make it uppercase or lowercase by just turning on/off the third bit.
 
-Here is the code to represent the binary representation of a character (<a href="http://tpcg.io/0gi1wJ" target="_blank">Execute the code here</a>):
+Here is the code to represent the binary representation of a character:
 
 ```C
 char letter = 'A';
@@ -72,9 +81,9 @@ for(i=0; i<8; i++) {
 }
 printf("\n");
 ```
+Run this code [here](http://tpcg.io/0gi1wJ).
 
-
-And here is the code to swicth the flag:
+And here is the code to switch the flag:
 
 ```C
 //TODO
@@ -191,7 +200,7 @@ In C, strings are arrays of characters. A pointer stores the memory address of t
 
 The difference between:
 
-```C   
+```C  
    char str_a[7]="abc123"; //Read Write memory
 ```
 and:
@@ -233,24 +242,24 @@ On linux::
 gcc -c xxxx.c -o xxxx.o
 ar rcs libxxxx.a xxxx.o   
 gcc -static main.c -L. lxxxx -o statically_linked
-``` 
+```
 Apple MacOs does not support static linking.
 
 #### Dynamic library
 
 On linux `gcc`
-   
+  
 On MacOs::
-```C   
+```C  
    gcc -dynamiclib -o libxxxx.dylib xxxx.c
 ```
 
 Verify the library `file libxxxx.dylib`. You should get `libxxxx.dylib: Mach-O 64-bit dynamically linked shared library x86_64
 `.
-   
+
 Finally, compile your application, link it to your library or libraries execute it `gcc -L. -lxxxx -lyyyy -o mainsl main.c`
 and execute it `./mainsl`.
-   
+  
 ## Resources
 
 ### C online
