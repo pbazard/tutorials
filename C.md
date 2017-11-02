@@ -61,7 +61,7 @@ And here is the code to swicth the flag:
 ```
 
 ### Typedef
-Besides native datatypes, a `typedef`allows to define aliases to existing datatypes. The syntax is `typedef <datatype> <alias_name>`. Typedefs can be chained, that is we can define a typedef on another typedef, as can be seen in the `stdint` library.
+Besides native datatypes, a `typedef`allows to define aliases to existing ones. The syntax is `typedef <datatype> <alias_name>`. Typedefs can be chained, that is to say we can define a typedef on another typedef, as can be seen in the `stdint` library.
 
 ## Operators
 
