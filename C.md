@@ -11,6 +11,7 @@
 * [Strings](#strings)
 * [Structures](#structures)
 * [Unions](#unions)
+* [Bitmasks](#bitmasks)
 * [Resources](#resources)
 
 ## Introduction
@@ -71,6 +72,8 @@ ASCII characters occupy 1 byte aka 8 bits (not universal but is usually the case
 
 Given a letter, we can make it uppercase or lowercase by just turning on/off the third bit.
 
+Or we can determine if a character is uppercase or lowercase just by looking at the third bit.
+
 Here is the code to represent the binary representation of a character:
 
 ```C
@@ -121,7 +124,7 @@ A constant pointer to an integer.
 int * const
 ```
 
-A very useful technique to read (understand) that kind of declaration is the so-called [Clockwise/Spiral Rule](http://c-faq.com/decl/spiral.anderson.html) by David Andersion.
+A very useful technique to read (understand) that kind of declaration is the so-called [Clockwise/Spiral Rule](http://c-faq.com/decl/spiral.anderson.html) by David Anderson.
 
 Example program:
 
@@ -162,8 +165,7 @@ int const * const
 Real functions using a pointer to a constant character (``const char *``). Examples taken from `<stdio.h>`:
 
 ```C
-  int	 printf(const char * __restrict, ...) __printflike(1, 2);
-  int	 puts(const char  *);
+int	 puts(const char  *);
 ```
 
 ## Arrays
@@ -219,6 +221,9 @@ Let's explain ``int argc`` and ``char const *argv[]``...
 ## Structures
 
 ## Unions
+
+## Bitmasks
+
 ## The preprocessor
 
 ## Toolbox
@@ -254,7 +259,7 @@ On MacOs::
    gcc -dynamiclib -o libxxxx.dylib xxxx.c
 ```
 
-Verify the library `file libxxxx.dylib`. You should get `libxxxx.dylib: Mach-O 64-bit dynamically linked shared library x86_64
+Verify the library `file libxxxx.dylib`. You should get something like `libxxxx.dylib: Mach-O 64-bit dynamically linked shared library x86_64
 `.
 
 Finally, compile your application, link it to your library or libraries execute it `gcc -L. -lxxxx -lyyyy -o mainsl main.c`
@@ -264,6 +269,8 @@ and execute it `./mainsl`.
 
 ### C online
 Compile and execute C code online at [Codingground](https://www.tutorialspoint.com/compile_c_online.php).
+
+### Some great C code
 
 ### The Clockwise/Spiral rule
 The technique called "Clockwise/spiral rule" helps to parse any C declaration and can be found [here](http://c-faq.com/decl/spiral.anderson.html).
