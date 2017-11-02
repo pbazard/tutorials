@@ -29,6 +29,7 @@ unsigned short int total=5;
 ```
 
 ### Char datatype
+ASCII characters occupy 1 byte aka 8 bits (not universal but is usually the case) in memory. All capital letters will begin with `010` in binary.
 
 ## Pointers
 
