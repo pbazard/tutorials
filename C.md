@@ -3,6 +3,7 @@
 
 ## Contents
 * [Datatypes](#datatypes)
+* [Operators](#operators)
 * [Pointers](#pointers)
 * [Arrays](#arrays)
 * [Strings](#strings)
@@ -51,6 +52,7 @@ And here is the code to swicth the flag:
 ```C
 //TODO
 ```
+## Operators
 
 ## Pointers
 
