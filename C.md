@@ -1,6 +1,24 @@
 
 # C is easy
 
+## Data types
+
+### Numeric datatypes
+
+Data type itself
+* `int`: positive or negative whole number
+* `signed int`: the same as int
+* `unsigned int`: no sign bit so only for positive whole numbers
+* `float` positive or negative fractional numbers
+
+Size modifiers allows to specify how much space is allocated to a number
+* `long`: increases the size
+* `short`: reduces the size
+
+Example: `unsigned shot int total=5`
+
+### Char datatype
+
 ## Pointers
 
 Pointer to an integer
