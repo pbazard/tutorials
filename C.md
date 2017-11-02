@@ -1,7 +1,7 @@
 
 # C is easy
 
-[Arrays](##Arrays)
+[Arrays](##arrays)
 
 ## Data types
 
