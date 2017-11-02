@@ -32,7 +32,9 @@ Example:
 unsigned short int total=5;
 ```
 
-Useful macros provided by the standard library:
+Useful predefined types provided by the standard library `stdint.h` (Typedefs are described later). For example the type 'int32_t' defined is `_int32_t.h`is simply an `int`but the advantage of using it is that you know immedialtely that it occupies 32 bits or 4 bytes of memory.
+
+Their usages becomes more obvious if you want to use a 64 bits unsigned integer. Instead of declaring `typedef unsigned long long uint64_t` you can simply use the type defined by `uint64_t`
 
 ### Char datatype
 ASCII characters occupy 1 byte aka 8 bits (not universal but is usually the case) in memory. All capital letters will begin with `010` in binary. Lower case letter will begin with `011`, hence the 3rd bit is a flag that indicates if the letter is capital or not.
