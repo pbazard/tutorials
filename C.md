@@ -16,15 +16,16 @@
 ### Numeric datatypes
 
 #### Types
-* `int`: positive or negative whole number
-* `signed int`: the same as int
-* `unsigned int`: no sign bit so only for positive whole numbers
+* `int`: positive or negative whole number. Occupies 2 bytes in memory
+* `double`: occupies 8 bytes in memory
 * `float` positive or negative fractional numbers
 
 #### Modifiers
 Size modifiers allow to specify how much space is allocated to a number
-* `long`: increases the size
+* `long`: increases the size by 2 bytes. A `long int` will the occupy 4 bytes and a `long double` will occupy 10 bytes.
 * `short`: reduces the size
+* `signed`: positive and negative values
+* `unsigned`: positive values only
 
 Example: 
 
@@ -59,6 +60,13 @@ And here is the code to swicth the flag:
 //TODO
 ```
 ## Operators
+
+* Arithmetic Operators
+* Relational Operators
+* Logical Operators
+* Bitwise Operators
+* Assignment Operators
+* Ternary or Conditional Operators
 
 ## Pointers
 
