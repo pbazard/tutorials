@@ -159,7 +159,7 @@ The difference between:
 
 ```C   
    char str_a[7]="abc123"; //Read Write memory
-```   
+```
 and:
 
 ```C
