@@ -15,7 +15,11 @@ Size modifiers allows to specify how much space is allocated to a number
 * `long`: increases the size
 * `short`: reduces the size
 
-Example: `unsigned shot int total=5`
+Example: 
+
+```C 
+unsigned short int total=5;
+```
 
 ### Char datatype
 
