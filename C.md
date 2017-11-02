@@ -36,7 +36,7 @@ ASCII characters occupy 1 byte aka 8 bits (not universal but is usually the case
 
 Given a letter, we can make it uppercase or lowercase by just turning on/off the third bit.
 
-Here is the code to represent the binary representation of a character (<a href="http://tpcg.io/FhxiCg" target="_blank">Execute the code here</a>):
+Here is the code to represent the binary representation of a character (<a href="http://tpcg.io/0gi1wJ" target="_blank">Execute the code here</a>):
 
 ```C
 char letter = 'A';
