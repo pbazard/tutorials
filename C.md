@@ -1,13 +1,11 @@
 
 # C is easy
 
-[Datatypes](#datatypes)
-
-[Pointers](#pointers)
-
-[Arrays](#arrays)
-
-[Strings](#strings)
+## Contents
+*[Datatypes](#datatypes)
+*[Pointers](#pointers)
+*[Arrays](#arrays)
+*[Strings](#strings)
 
 ## Data types
 
