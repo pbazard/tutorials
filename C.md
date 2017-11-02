@@ -20,6 +20,8 @@
 
 This tutorial is intended for people who have a background in programming. Rather than developing a simple Hello world program and add complexity, we prefer to present how to create real complex program from the start. Therefore, you need to have some basic knowledge of how a language works and how you run it.
 
+Disclaimer: we don't explain or try to explain what is good C code but will focus only on how it works.
+
 ## Programming in C
 
 ### The basics of a C program
