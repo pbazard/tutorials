@@ -2,6 +2,8 @@
 # C is easy
 
 ## Contents
+* [Introduction](#introduction)
+* [Programming in C](#programing-in-c)
 * [Datatypes](#datatypes)
 * [Operators](#operators)
 * [Pointers](#pointers)
@@ -10,6 +12,24 @@
 * [Structures](#structures)
 * [Unions](#unions)
 * [Resources](#resources)
+
+## Introduction
+This tutorial is intended for people who have a background in programming. Rather than developing a simple Hello world program and add complexity, we prefer to present how to create real complex program from the start. Therefore, you need to have some basic knowledge of how a language works and how you run it.
+
+## Programming in C
+Pogramming in C necessitates to create source code files with the extension `*.c` and, optinally, `*.h` header files.
+
+Before executing a program in C we have to follow 3 mandatory steps:
+* preprocessing
+* compiling
+* linking
+
+### Preprocessing
+In this phase, the
+
+### Compiling
+
+### Linking
 
 ## Data types
 
