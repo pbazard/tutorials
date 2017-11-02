@@ -193,16 +193,12 @@ on the command line.
 ``$`` represents end of line.
 
 #### Creating a static library
-
-
 On linux::
-
-   gcc -c xxxx.c -o xxxx.o
-   
-   ar rcs libxxxx.a xxxx.o
-   
-   gcc -static main.c -L. lxxxx -o statically_linked
-   
+```C
+gcc -c xxxx.c -o xxxx.o
+ar rcs libxxxx.a xxxx.o   
+gcc -static main.c -L. lxxxx -o statically_linked
+``` 
 Apple MacOs does not support static linking.
 
 #### Creating a dynamic library
