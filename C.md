@@ -1,7 +1,10 @@
 
 # C is easy
 
+[Datatypes](##datatypes)
+[Pointers](##pointers)
 [Arrays](##arrays)
+[Strings](##strings)
 
 ## Data types
 
@@ -31,8 +34,6 @@ Pointer to an integer
 ```C
 int *
 ```
-
-
 
 Pointer to a const integer.
 
