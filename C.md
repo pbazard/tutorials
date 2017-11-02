@@ -33,7 +33,7 @@ Example:
 unsigned short int total=5;
 ```
 
-Useful predefined types provided by the standard library `stdint.h` (Typedefs are described later). For example the type 'int32_t' defined is `_int32_t.h`is simply an `int`but the advantage of using it is that you know immedialtely that it occupies 32 bits or 4 bytes of memory.
+Useful predefined types provided by the standard library `stdint.h` (Typedef are described later but basically a typedef is an alias for an existing datatype). For example the type 'int32_t' defined is `_int32_t.h`is simply an `int`but the advantage of using it is that you know immedialtely that it occupies 32 bits or 4 bytes of memory.
 
 Their usages becomes more obvious if you want to use a 64 bits unsigned integer. Instead of declaring `typedef unsigned long long uint64_t` you can simply use the type defined by `uint64_t`
 
@@ -59,6 +59,10 @@ And here is the code to swicth the flag:
 ```C
 //TODO
 ```
+
+### Typedef
+Besides native datatypes, a `typedef`allows to define aliases to existing datatypes. The syntax is `typedef <datatype> <alias_name>`. Typedefs can be chained, that is we can define a typedef on another typedef, as can be seen in the `stdint` library.
+
 ## Operators
 
 * Arithmetic Operators
