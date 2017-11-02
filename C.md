@@ -116,7 +116,7 @@ Constant pointer to a constant integer
 int const * const
 ```
 
-Real functions using ``const char *``. The ``printf`` or ``puts`` functions in the standard library. Examples taken from `<stdio.h>`.
+Real functions using a pointer to a constant character (``const char *``). Examples taken from `<stdio.h>`:
 
 ```C
   int	 printf(const char * __restrict, ...) __printflike(1, 2);
