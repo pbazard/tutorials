@@ -218,4 +218,8 @@ and execute it `./mainsl`.
    
 ## Resources
 
+### C online
+Compile and execute C code online at [Codingground] https://www.tutorialspoint.com/compile_c_online.php
+
+### The Clockwise/Spiral rule
 The technique called "Clockwise/spiral rule" helps to parse any C declaration and can be found [here](http://c-faq.com/decl/spiral.anderson.html).
