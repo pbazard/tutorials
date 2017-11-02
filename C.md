@@ -31,9 +31,9 @@ unsigned short int total=5;
 ```
 
 ### Char datatype
-ASCII characters occupy 1 byte aka 8 bits (not universal but is usually the case) in memory. All capital letters will begin with `010` in binary. Lower case letter will begin with `011`, hence the 3rd bit is a flag that indicates of the letter is capital or not.
+ASCII characters occupy 1 byte aka 8 bits (not universal but is usually the case) in memory. All capital letters will begin with `010` in binary. Lower case letter will begin with `011`, hence the 3rd bit is a flag that indicates if the letter is capital or not.
 
-Given a letter, we can make capital or lowercase by just turnion on/off the third bit.
+Given a letter, we can make it uppercase or lowercase by just turning on/off the third bit.
 
 Here is the code to represent the binary representation of a character:
 
@@ -44,6 +44,12 @@ for(i=0; i<8; i++) {
   printf("%d", !!((letter << i) & 0x80));
 }
 printf("\n");
+```
+
+And here is the code to swicth the flag:
+
+```C
+//TODO
 ```
 
 ## Pointers
