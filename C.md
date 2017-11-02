@@ -6,6 +6,7 @@
 * [Pointers](#pointers)
 * [Arrays](#arrays)
 * [Strings](#strings)
+* [Resources](#resources)
 
 ## Data types
 
