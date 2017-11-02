@@ -78,7 +78,7 @@ A constant pointer to an integer.
 int * const
 ```
 
-A very useful technique to read (understand) that kind of declaration is the so-called [Clockwise/Spiral Rule](http://c-faq.com/decl/spiral.anderson.html)) by David Andersion.
+A very useful technique to read (understand) that kind of declaration is the so-called [Clockwise/Spiral Rule](http://c-faq.com/decl/spiral.anderson.html) by David Andersion.
 
 Example program:
 
