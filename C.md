@@ -6,6 +6,8 @@
 * [Pointers](#pointers)
 * [Arrays](#arrays)
 * [Strings](#strings)
+* [Structures](#structures)
+* [Unions](#unions)
 * [Resources](#resources)
 
 ## Data types
@@ -158,6 +160,10 @@ is that in the later case, we work with a string constant that cannot be changed
 
 Let's explain ``int argc`` and ``char const *argv[]``...
 
+
+## Structures
+
+## Unions
 ## The preprocessor
 
 ## Toolbox
