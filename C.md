@@ -15,13 +15,14 @@
 
 ### Numeric datatypes
 
-Data type itself
+#### Types
 * `int`: positive or negative whole number
 * `signed int`: the same as int
 * `unsigned int`: no sign bit so only for positive whole numbers
 * `float` positive or negative fractional numbers
 
-Size modifiers allows to specify how much space is allocated to a number
+#### Modifiers
+Size modifiers allow to specify how much space is allocated to a number
 * `long`: increases the size
 * `short`: reduces the size
 
@@ -30,6 +31,8 @@ Example:
 ```C 
 unsigned short int total=5;
 ```
+
+Useful macros provided by the standard library:
 
 ### Char datatype
 ASCII characters occupy 1 byte aka 8 bits (not universal but is usually the case) in memory. All capital letters will begin with `010` in binary. Lower case letter will begin with `011`, hence the 3rd bit is a flag that indicates if the letter is capital or not.
