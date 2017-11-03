@@ -18,14 +18,14 @@
 
 *No website is as good as a good book. And no good book is as good as a disassembly output*.
 
-This tutorial is intended for people who have a background in programming. Rather than developing a simple Hello world program and add complexity, we prefer to present how to create real complex program from the start. Therefore, you need to have some basic knowledge of how a language works and how you run it.
+This tutorial is intended for people who have a background in programming and more particularly who are familiar with programming in a high-level language. Rather than developing a simple Hello world program and add complexity, we prefer to present how to create real complex program from the start. Therefore, you need to have some basic knowledge of how a language works and how you run it.
 
 Disclaimer: we don't explain or try to explain what is good C code but will focus only on how it works.
 
 ## Programming in C
 
 ### The basics of a C program
-Programming in C necessitates to create source code files with the extension `*.c` and, optionally, `*.h` header files.
+Programming in C necessitates to create one or more *source files* with the extension `*.c` and, optionally, `*.h` header files. Header files are mainly used to group common declarations and to define functions prototype.
 
 Once these files are created, we need to create an executable, like `exe` file on Windows.
 
@@ -35,7 +35,13 @@ For this, a program in C we have to follow 3 mandatory steps:
 * linking
 
 ### Preprocessing
-In this phase, the all the `#include`, `#define`,... statements are replaced by their implementation.
+Each time you type `#` (or `##` in one case) in your code, the preprocessor is activated. In this phase, the all the `#include`, `#define`,... statements are replaced by their implementation.
+
+What is the difference between a `#define MY_VARIABLE 5` and a global variable?
+
+Predefined macros.
+
+Macros are very important to understand e.g. for ellipsis which is based on the `__VA_ARGS__` macro.
 
 ### Compiling
 This is where the compiler like `gcc` or `clang` comes into play. A file with extension `*.obj` is/are created.
@@ -229,8 +235,14 @@ Let's explain ``int argc`` and ``char const *argv[]``...
 ## The preprocessor
 
 ## Toolbox
+A list of mandatory and useful tools to use in C programming.
+### gcc
 
 ### gdb
+
+### gcov
+
+### gprof
 
 ### Make
 All actions, rules etc... are identified by tabs. To make sure that tabs are correctly inserted in the makefile, enter
