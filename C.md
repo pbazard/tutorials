@@ -284,6 +284,9 @@ and execute it `./mainsl`.
 ### C online
 Compile and execute C code online at [Codingground](https://www.tutorialspoint.com/compile_c_online.php).
 
+### C rules and recommendations
+https://www.securecoding.cert.org/confluence/display/c/SEI+CERT+C+Coding+Standard
+
 ### Some great C code
 
 ### The Clockwise/Spiral rule
