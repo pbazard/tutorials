@@ -288,3 +288,6 @@ Compile and execute C code online at [Codingground](https://www.tutorialspoint.c
 
 ### The Clockwise/Spiral rule
 The technique called "Clockwise/spiral rule" helps to parse any C declaration and can be found [here](http://c-faq.com/decl/spiral.anderson.html).
+
+### C for dummies including Ncurses
+http://c-for-dummies.com/ncurses/source_code/09-06_quad.php
