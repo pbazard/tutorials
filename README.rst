@@ -14,7 +14,7 @@ Tutorials and Cheatsheets
 * Python
 * Django
 * `Liferay <https://github.com/pbazard/tutorials/blob/master/liferay.rst>`_
-* Javascript
+* _`Javascript <https://github.com/pbazard/tutorials/blob/master/javascript.rst>`_
 * `Node <https://github.com/pbazard/tutorials/blob/master/node.rst>`_
 * Scala
 * Playframework
